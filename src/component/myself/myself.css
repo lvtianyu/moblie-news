@@ -1,0 +1,113 @@
+
+.contain{
+    padding-bottom: 1.04rem;
+        font-weight: 200
+
+}
+body{
+    background-color: #f3f3f3;
+}
+.header a{
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/*-------------------*/
+.header{
+    width:100%;
+    height: 4.6rem;
+    background: url("../../static/myself-back.png") no-repeat;
+    background-size: cover;
+    margin-bottom: .2rem;
+    text-align: center;
+    padding-top: .9rem
+}
+.header>li{
+    width: 100%;
+    margin-bottom: .3rem;
+    font-size: .36rem;
+    color: #fff;
+}
+.header>li:first-child a{
+    background: url('../../static/img-defaule-head.png') no-repeat;
+    background-size: cover;
+    display: inline-block
+}
+.header>li:first-child img,.header>li:first-child a{
+    height: 1.5rem;
+    width: 1.5rem;
+    border:1px solid #fff;
+    border-radius: 50%;
+}
+.header>li:last-child{
+    font-size: .3rem;
+
+}
+.header>li:last-child>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    line-height: 1rem;
+}
+.header>li:last-child>a>img{
+    width: .36rem;
+    height: .36rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: .1rem;
+    
+}
+
+/*--------------------------------*/
+.body-list,.body-list>ul,.body-list>ul>li,.body-list>ul>li>a{
+    width: 100%;
+}
+.body-list>ul>li>a{
+    display: inline-block;
+        height: 1rem
+
+}
+.body-list>ul{
+    margin-bottom: .2rem;
+    background-color: #fff;
+    font-size: .36rem;
+}
+.body-list>ul>li{
+    padding: 0 .4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.body-list>ul>li span{
+    display: inline-block;
+    height: 1rem;
+    line-height: 1rem;
+
+}
+.body-list>ul>li span:first-child{
+    width: 70%;
+    color: #333;
+    text-align: left
+}
+.body-list>ul>li span:last-child{
+    width: 30%;
+    color: #bbb;
+    font-size: .3rem;
+    text-align: right
+}
+.body-list>ul>li span>img{
+    vertical-align: middle;
+    margin-right: .1rem;
+    width: .42rem;
+    height: .5rem;
+}
+.body-list>ul>li span>strong{
+    display: inline-block;
+    width: .2rem;
+    height: .2rem;
+    border-radius: 50%;
+    background-color: #fb3737;
+    vertical-align: text-top;
+
+}

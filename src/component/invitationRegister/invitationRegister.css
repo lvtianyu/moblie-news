@@ -1,0 +1,61 @@
+.contain{
+    height: 100%;
+}
+.contain>div{
+    width: 100%;
+    height: 100%;
+    background-color: #f22e55;
+    display: inline-block
+}
+.contain>div>img{
+    width: 100%;
+}
+
+/* ------------ */
+.contain>div>div{
+    height: .9rem;
+    width: 100%;
+    padding: 0 .3rem;
+    position: relative;
+    margin-bottom: .3rem
+}
+
+input{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    padding-left: .2rem;
+}
+.verification-code>s{
+    position: absolute;
+    width: 2rem;
+    top: 0;
+    right: .35rem;
+    height: .7rem;
+    line-height: .7rem;
+    background-color: #e3e3e3;
+    margin-top: .1rem;
+    border-radius: .7rem;
+    letter-spacing: 1px;
+    text-decoration:none;
+    color: #fff
+}
+.verification-code>s.active{
+    background-color: #f8831e
+}
+
+button{
+    width: 6.2rem;
+    height: 1.2rem;
+    font-size: .36rem;
+    color: #fff;
+    background-color: #f8831e;
+    border-radius: .63rem;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    letter-spacing: 1px;
+}
+.contain>div p{
+    width: 100%;
+    color: #f8831e
+}

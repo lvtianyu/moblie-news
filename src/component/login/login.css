@@ -1,0 +1,118 @@
+.contain{
+    background-color: #fff;
+    color: #bbb;
+    height: 100%;
+}
+.public{
+    padding: 0 .4rem;
+}
+.public>div,.public>p,button{
+    width:100%;
+    height: .9rem;
+}
+.public>div{
+    border-bottom:1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+    margin-top:.2rem 
+}
+.public>div>img{
+    width:.25rem;
+    height: .35rem;
+    vertical-align: middle;
+    margin-right: .2rem
+}
+.public>div>input{
+    height: 100%;
+    width: 85%;
+    font-size: .3rem
+}
+.verification-code>span{
+    width: 15%;
+    font-size: .3rem;
+    color: #000;
+    border-right: 1px solid #aaa;
+    margin-right: .1rem
+}
+.public>p{
+    text-align: right;
+    font-size: .24rem;
+    line-height: .9rem;
+    margin-bottom: .5rem
+}
+.public>p>a{
+    color: #f53c3c;
+
+}
+button{
+    color: #fff;
+    font-size: .36rem;
+    letter-spacing: 2px;
+    background-color: #f53c3c;
+    border-radius: 2px
+}
+.register-btn{
+    background-color: #fff;
+    border:1px solid #f53c3c;
+    margin-top: .2rem
+}
+.register-btn>a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    line-height: .9rem;
+    color: #f53c3c;
+}
+.notice-word{
+    font-size: .3rem;
+}
+h6{
+    margin-top: 3rem;
+    color: #666666;
+    font-weight: normal
+}
+.register>ul{
+    width: 100%;
+    height: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .2rem
+}
+.register>ul>li{
+    font-size: .24rem;
+    line-height: .75rem;
+    width: 31%;
+    height: .75rem;
+    color: #fff;
+    border-radius: 2px
+}
+.register>ul>li:nth-of-type(1){
+    background-color: #31c345;
+}
+.register>ul>li:nth-of-type(2){
+    background-color: #4291ea
+}
+.register>ul>li:nth-of-type(3){
+    background-color: #f25a5a
+}
+.register>ul>li>i{
+    width: 33px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image:url('../../static/wxq_03.png') ;
+    background-repeat: no-repeat;
+    margin-right: .06rem
+}
+.wechat>i{
+    background-position: 0 0;
+}
+.qq>i{
+    background-position: -38px 0;
+}
+.weibo>i{
+    background-position: -78px 0;
+}

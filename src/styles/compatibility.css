@@ -1,0 +1,34 @@
+/*为了实现华为手机不兼容flex  */
+
+/*index.css  */
+.introduce{
+    padding:.18rem;
+}
+.introduce>a{
+        float: left; 
+
+}
+.news-nav>ul>li{
+    float: left;
+    line-height: 1rem
+}
+.news-list>ul>li>ul,.news-nav>ul,.footer-nav{
+    overflow: hidden;
+    display: block
+}
+.news-list>ul>li>ul>li{
+    float: left
+}
+.news-list>ul>li>ul>li:last-child>div{
+    overflow: hidden;
+    display: block
+
+}
+.last-span{
+    float: right
+}
+.first-span{
+    float: left;
+    margin-top: .12rem
+}
+

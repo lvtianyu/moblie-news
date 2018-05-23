@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telphone=no, email=no" />		
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="320">
+	<meta name="browsermode" content="application">
+	<meta name="x5-page-mode" content="app">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="format-detection" content="telephone=no">  
+    <style>
+        .loading,.loader {
+            position: fixed;
+            text-align: center;
+            z-index: 9999
+        }
+         .loading{
+             top:0;
+             bottom: 0;
+             left: 0;
+             right: 0;
+               animation: bgColr  1.5s linear;
+            -webkit-animation: bgColr 1.5s  linear;
+            background-color: #fff;
+
+         }
+       .loader {
+            padding-top: 20px;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, .7);
+            color: #fff;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        
+        .loader>div, .loading>div{
+            
+            border-top-color: #0ea84a;
+            border-left-color: #0080cb;
+            border-bottom-color: #e5372e;
+            border-right-color: #fbc423;
+            
+        }
+         .loader>div{
+            border-radius: 50%;
+            border-width: 4px;
+            border-style: solid;
+            animation: mint-spinner-rotate .8s infinite linear;
+            -webkit-animation: mint-spinner-rotate .8s infinite linear;
+            height: 32px;
+            width: 32px;
+         }
+         .loading>div{
+              height: 40px;
+            width: 40px;
+            background:url('../static/logo.png') no-repeat;
+            background-size: cover;
+            margin-top: 50%;
+            margin-left: 45%;
+        
+         }
+         @keyframes bgColr {
+            0% {
+                filter: blur(5px)
+            }
+            to {
+                filter: blur(1px)
+            }
+        }
+        
+        @-webkit-keyframes bgColr {
+             0% {
+                filter: blur(5px)
+            }
+            to {
+                filter: blur(1px)
+            }
+        }
+        
+        
+        @-webkit-keyframes mint-spinner-rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(1turn);
+            }
+        }
+        
+        @keyframes mint-spinner-rotate {
+            0% {
+                transform: rotate(0deg)
+            }
+            to {
+                transform: rotate(1turn)
+            }
+        }
+     
+    </style>
+
+</head>
+<body>
+    <div class="loader hide" id="load">
+        <div></div>
+    </div>
+    <div class="loading" id="loading">
+        <div></div>
+    </div>
+  
+    <!--消息层-->
+    <div class="modal-public notice-public hide" id="notice">
+        <div class="notice " id="notice-text"></div>
+    </div>
+
+
+    <!---------------------------------------->
+    
+        
+	<div class="contain" >
+      
+        <!--－－－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+       
+        <div class="register public">
+            <div class="verification-code">
+                <span>＋86</span><input type="number" name="" value="" placeholder="请输入手机号码" id="phoneInput" maxlength="11">
+            </div>
+
+             <div class=" seting-password">
+                <input type="password" placeholder="请输入密码"  id="setingPassword">
+            </div>
+            <p><a href="/register.html?name%3D%u5FD8%u8BB0%u5BC6%u7801" >忘记密码</a></p>
+            <button type="" id="loginSubmit">登录</button>
+            <button type="" class="register-btn"><a href="/register.html?v=1">注册</a></button>
+            <!-- <h6 >.或者用第三方账号登录</h6> -->
+
+            <!--－－－－－－－－－－－－－－－－－－-->
+            <!-- <ul>
+                <li class="wechat">
+                    <i></i>微信登录
+                </li>
+                <li class="qq">
+                   <i></i>QQ登录
+                </li>
+                <li class="weibo">
+                   <i></i>微博登录
+                </li>
+            </ul> -->
+            
+            
+        </div>
+
+    </div>
+
+ 
+
+		
+</body>
+</html>
+
+

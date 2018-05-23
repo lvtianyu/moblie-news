@@ -1,0 +1,31 @@
+.contain{
+    background-color: #fff;
+}
+img{
+    width: 100%;
+}
+h5{
+    font-size: .36rem;
+    color: #333;
+}
+ul{
+    font-size: .3rem;
+    color: #999;
+    padding: .4rem;
+    text-align: left;
+    width: 100%;
+}
+ul>li{
+    margin-bottom: .4rem;
+    line-height: .4rem;
+    word-spacing: 2px;
+}
+
+button{
+    width: 6.2rem;
+    height: 1.26rem;
+    font-size: .36rem;
+    color: #fff;
+    background-color: #f62f47;
+    border-radius: .63rem;
+}

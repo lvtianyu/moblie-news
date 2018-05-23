@@ -1,0 +1,159 @@
+
+
+/*－－－－－－关于我们－－－－－  */
+.help-modal{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top:0;
+    background-color: #f1f1f1;
+    z-index: 9999;
+    
+}
+.help-modal div{
+    position: fixed;
+    z-index: 99;
+    bottom:50%;
+    right: -.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    width: 1rem;
+    background-color: #fb3737;
+    color: #fff;
+    border-radius: 50%;
+    text-align: left;
+    padding-left: .2rem
+}
+
+.help-modal>ul{
+    color:#333;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0
+}
+  .title{
+    text-align: center;
+    overflow: hidden;
+    margin-top: 1.9rem;
+    margin-bottom: 3rem;
+
+  }
+.title>p{
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid #cd555b;
+    border-radius: 5px;
+    background-color: #fff;
+    line-height: 1.25rem;
+    text-align: center;
+}
+.title img{
+      width: .66rem;
+    vertical-align: middle;
+}
+  .title h5{
+    margin-top: .28rem;
+        font-size: .3rem;
+  }
+
+  /*-----------------  */
+  .list-us{
+    text-align: center
+  }
+  .list-us b{
+    color: #bbb;
+    font-size: .22rem;
+    margin-bottom: .45rem;
+    display: inline-block;
+  }
+   .list-us p{
+    font-size: .24rem;
+    color: #333;
+    line-height: .5rem;
+   }
+   .line-rule{
+    padding:.45rem 0;
+    text-align: center
+   }
+   .line-rule>p{
+    width: 3.65rem;
+    border-top: 1px solid #cdcdcd;
+    
+    display: inline-block
+   }
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+
+.slideOutLeft,.slideInRight,.slideOutRight,.slideInLeft{
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible!important;
+    backface-visibility: visible!important;
+
+}
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.slideOutRight {
+  animation-name: slideOutRight;
+}
+
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.slideOutLeft {
+  animation-name: slideOutLeft;
+}

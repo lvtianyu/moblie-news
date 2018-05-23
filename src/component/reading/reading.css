@@ -1,0 +1,107 @@
+.contain{
+    background-color: #fff;
+    padding-bottom: 0;
+    padding-top: .5rem
+}
+
+.news-list>ul>li>ul>li:last-child>.share i{
+    display: inline-block;
+    width:.35rem;
+    height: .35rem;
+    background: url("../../static/book-s.png") no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: .1rem
+}
+
+
+.news-list>ul>li>ul>li:last-child>.share>.first-span{
+    font-size: .26rem;
+     color: #bbb;
+     float: left;
+              margin-top: .35rem
+
+}
+.news-list>ul>li>ul>li:last-child>.share>.active{
+    color: #f73636
+}
+.news-list>ul>li>ul>li:last-child>.share>.active i{
+      background: url("../../static/book.png") no-repeat;
+    background-size: cover;
+}
+.news-list>ul>li>ul>li:last-child>.share>.last-span{
+    width: .9rem;
+    height: .9rem;
+    line-height: .9rem;
+    text-align: center;
+    font-size: .3rem;
+     color: #f73636;
+     position: relative;
+    float: right
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .9rem;
+    height: .9rem;
+}
+.news-list>ul>li>ul>li:last-child>.gotopage-A{
+    height: 1rem
+}
+
+.news-list>ul>.lad{
+    height:2rem
+}
+
+/*---------rule modal------------*/
+.modal>div>div{
+    width: 90%;
+    height: 70%;
+    border-radius: 4px;
+    border-top: 2px solid #f8ca5b;
+    border-bottom: 2px solid #f8ca5b;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.modal>div>div .rule{
+    padding: 0 .2rem ;
+    font-size: .3rem;
+    text-align: left;
+    color: #333;
+
+}
+.rule>h5{
+    font-size: .3rem;
+    font-weight: 300
+}
+ .rule>p{
+    width: 100%;
+    font-weight: 200;
+    line-height: .56rem
+ }
+
+  /*-----------------*/
+   .readShare-float {
+        color: #fff;
+        text-align: right;
+        font-size: .25rem;
+        background-color: #f73636;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width:2rem;
+        height: .45rem;
+        line-height: .45rem;
+         border-top-left-radius: .2rem;
+        border-bottom-left-radius: .2rem;
+     
+    }
+
+    .modal .return>span{
+        height: .05rem
+    }
+    

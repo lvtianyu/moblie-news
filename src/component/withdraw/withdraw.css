@@ -1,0 +1,152 @@
+
+body{
+    font-size: .3rem;
+    color: #bbb;
+    
+}
+.contain{
+    border-top: 1px solid transparent;
+    background-color: #fff
+}
+
+.contain>ul,.contain>ul>li.contain>p,.withdraw-list,.withdraw-list>ul,.withdraw-list>div{
+    width: 100%;
+}
+
+.contain>ul{
+    margin-top: .6rem;
+    margin-bottom: .3rem;
+}
+
+.contain>ul>li{
+    margin-bottom: .3rem;
+}
+.contain>ul>li:first-child{
+    color:#999;
+}
+.contain>ul>li:nth-of-type(2){
+    font-size: .42rem;
+    color: #fb3737
+
+}
+
+.contain>ul>li:last-child{
+    color:#cdcdcd;
+}
+
+.button{
+    display: inline-block;
+    height: .9rem;
+    line-height: .9rem;
+    width:6rem;
+    border-radius: .45rem;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #fb3737;
+    font-size: .42rem;
+    font-weight: 100;
+}
+
+p{
+    font-size: .22;
+    margin-top: .3rem
+}
+
+.withdraw-list{
+    position: fixed;
+    bottom: 0;
+    height: 4rem;
+    padding:0 .7rem;
+    
+
+}
+.withdraw-list>ul{
+    border-top: 1px solid #f2f2f2;
+    height: 3rem;
+    overflow:scroll;
+}
+
+.withdraw-list>ul>li{
+    border-bottom: 1px solid #f2f2f2;
+    height: 1rem;
+    line-height: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.withdraw-list>ul>li>span{
+    display: inline-block;
+    width: 30%;
+}
+
+.withdraw-list>ul>li>span:first-child{
+    text-align: left
+}
+.withdraw-list>ul>li>span:last-child{
+    text-align: right;
+}
+
+.withdraw-list>div{
+    height: 1rem;
+    line-height: 1rem;
+    text-align: right;
+    color: #333
+}
+
+/*  */
+.modal>div>div{
+    width: 90%;
+    height: 30%;
+    border-radius: 4px;
+    border-top: 2px solid #f8ca5b;
+    border-bottom: 2px solid #f8ca5b;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 50%;
+    margin-left: 5%;
+}
+
+.modal>div>div .rule{
+    padding: .2rem;
+    font-size: .3rem;
+    text-align: left;
+    color: #333;
+
+}
+.rule>h5{
+    font-size: .3rem;
+    font-weight: 300
+}
+ .rule>p{
+    width: 100%;
+    font-weight: 200;
+    line-height: .56rem;
+    text-align: center;
+    color: #bbb
+ }
+
+ .modal ul{
+     width: 100%;
+     height: 1rem;
+     display: flex;
+     justify-content:space-around;
+     align-items: center
+ }
+ .modal ul>li{
+     width: 40%;
+     height: 100%;
+     background-color: #fb3737;
+     border-radius: 5px;
+     float: left
+ }
+    .modal ul>li:last-child{
+        float: right
+    }
+
+  .modal ul>li>a{
+      display: inline-block;
+      line-height: 1rem;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      letter-spacing: 2px;
+  }

@@ -1,0 +1,178 @@
+/*--为了实现华为手机不兼容flex --*/
+.news-list{
+    padding:0 .2rem;
+}
+.news-list>ul{
+    width: 100%;
+}
+.news-list>ul>li{
+    border-bottom: 1px solid #f2f2f2;
+    overflow: hidden
+}
+.news-list span,.news-list>ul a{
+    display: inline-block;
+    text-align: left
+}
+.news-list>ul a{
+    color: #333
+}
+.news-list span{
+    font-weight: normal;
+    font-size: .24rem;
+    height: .4rem;
+    line-height: .4rem;
+    color: #999
+}
+/*----普通列表和小广告列表一样-----  */
+
+.common-list>ul,.lad-small>ul,.common-list>ul>li:first-child>a,
+.common-list>ul>li:first-child>a>img,.lad-small>ul>li:first-child>a,.lad-small>ul>li:first-child>a>img,.common-list>ul>li:last-child>a,.lad-small>ul>li:last-child>a{
+     width: 100%;
+}
+.common-list>ul,.lad-small>ul{
+   
+    padding:.2rem 0;
+    overflow: hidden
+}
+.common-list>ul>li,.lad-small>ul>li{
+    float: left;
+    height: 1.75rem;
+}
+.common-list>ul>li:first-child,.lad-small>ul>li{
+    width: 35%;
+}
+.common-list>ul>li:first-child>a,
+.common-list>ul>li:first-child>a>img,.lad-small>ul>li:first-child>a,.lad-small>ul>li:first-child>a>img{
+    height: 100%;
+}
+.common-list>ul>li:last-child,.lad-small>ul>li:last-child{
+    width: 65%;
+    padding-left: .2rem;
+    text-align: left;
+}
+.common-list>ul>li:last-child>a,.lad-small>ul>li:last-child>a{
+    height: 72%;
+}
+.common-list>ul>li:last-child>div,.lad-small>ul>li:last-child>div{
+    height: .4rem;
+}
+
+
+/*-----------  */
+.character-list,.character-list>ul,.character-list>ul>li:first-child,.character-list>ul>li:first-child a,.character-list>ul>li:last-child{
+        width: 100%;
+}
+.character-list{
+    clear: both;
+    height: 2.2rem;
+
+    padding: .4rem 0;
+}
+.character-list>ul{
+    height: 100%;
+}
+.character-list>ul>li:first-child{
+    text-align: left;
+    margin-bottom: .2rem;
+}
+.character-list>ul>li:first-child a{
+    font-size: .3rem;
+    /* line-height: .4rem; */
+    color: #333;
+    min-height: .8rem;
+}
+
+.news-list .top-span{
+    width: .76rem;
+    border: 1px solid #f94d4d;
+    border-radius: 2px;
+    color: #f94d4d;
+    margin-right: .2rem;
+    text-align: center
+}
+
+.news-list .last-span{
+    background-color: #f4f4f4;
+    color: #999;
+    border-radius: .2rem;
+    padding:0 .2rem;
+    float: right
+}
+.news-list .first-span, .news-list .top-span{
+    float: left;
+}
+.news-list .first-span{
+        font-size: .24rem;
+        color: #999;
+}
+
+/*----------------------------------*/
+.picture-list>ul,.picture-list a{
+     width: 100%;
+}
+.picture-list>ul{
+    padding:.2rem 0;
+}
+
+.picture-list>ul>.picture>a{
+    height: 1.75rem;
+}
+.picture-list>ul>.picture>a>img{
+    width: 32%;
+    height: 100%
+}
+.picture-list>ul>li:last-child{
+    padding-top: .2rem;
+    overflow: hidden;
+
+}
+.picture-list>ul>li:first-child>a{
+        padding-bottom: .2rem;
+}
+
+/*------横向大广告部分-----  */
+.lad-big{
+    padding-top: .2rem;
+    padding-bottom: .1rem;
+}
+.lad-big>a{
+    width: 100%;
+}
+.lad-big>.first-a{
+    padding-bottom: .2rem;
+}
+.lad-big>a>img{
+    width: 100%;
+    height: auto;
+}
+.lad-big>ul>li{
+   float: left;
+    height: .5rem;
+    line-height: .5rem;
+    color: #999;
+    font-size: .22rem
+}
+.lad-big>ul>li:first-child{
+    width: 80%;
+    text-align: left;
+}
+.lad-big>ul>li:last-child{
+    width: 20%;
+    text-align: right
+}
+.lad-big>ul>li:last-child b{
+    display: inline-block;
+    width: .26rem;
+    height: .26rem;
+    line-height: .26rem;
+    border-radius: 50%;
+    background-color: #e3e3e3;
+    color: #999;
+    text-align: center;
+    color: #fff;
+}
+.lad-big>ul>li>span{
+    padding:0 .1rem
+}
+
+/*－－－－－－－－－－－  */

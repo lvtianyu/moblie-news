@@ -1,0 +1,104 @@
+
+.contain{
+    background-color: #fff;
+    padding-bottom: 1.04rem
+}
+
+/*---------------------------------*/
+.search-input{
+    position: fixed;
+    top:0;
+    height: .8rem;
+    width: 100%;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+.search-input>li:last-child{
+    width: 20%;
+    display: flex;
+    align-items: center
+}
+.search-input>li:last-child>img{
+    height: .3rem;
+    margin-left: .3rem
+}
+.search-input>li:first-child{
+    width:80%;
+    height: 100%;
+    padding-top: .1rem;
+    text-align: right;
+    
+}
+.search-input>li:first-child>input{
+    height: .6rem;
+    width: 80%;
+    border-radius: .3rem;
+    padding-left: .1rem;
+    color:#999;
+    text-align: left;
+    background-color: rgba(255, 2555, 255, 0.6)
+}
+input::input-placeholder,textarea::input-placeholder {
+    color:#999;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color:#999;
+}
+
+
+/*-------------introduce------------*/
+.introduce{
+  
+    font-size: .22rem;
+    color: #999;
+}
+
+.introduce>a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    
+    padding:.2rem .2rem 0 .2rem;
+}
+.introduce>a>div{
+    width: 100%;
+    color: #333
+}
+.introduce>a>div>img{
+    width: 100%;
+}
+.introduce>a>div:last-child{
+    text-align: left;
+    height: .8rem;
+    line-height: .8rem;
+    background-color: #fff;
+    border-bottom: 1px solid #bbb;
+}
+.introduce>a>div:last-child span{
+    color: #fff;
+    background-color: #3bbe88;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .2rem;
+    height: .4rem;
+    line-height: .4rem;
+    padding:0 .1rem
+}
+/* .read-btn>div:first-child{
+    background:url("../../static/read-btn.png") no-repeat;
+    background-size: contain;
+}
+.share-btn>div:first-child{
+    background:url("../../static/share-btn.png") no-repeat;
+    background-size: contain;
+}
+.invited-btn>div:first-child{
+    background:url("../../static/invited-btn.png") no-repeat;
+    background-size: contain;
+}
+.work-btn>div:first-child{
+    background:url("../../static/work-btn.png") no-repeat;
+    background-size: contain;
+} */

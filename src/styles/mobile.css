@@ -1,0 +1,458 @@
+.contain{
+    width:100%;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    font-weight: 100;
+    /* font-size: .36rem; */
+    background-color: #f3f3f3;
+    overflow-x: hidden;
+}
+
+
+/*轮播样式*/
+
+.carousel-self {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-self ul:nth-of-type(1) {
+  width: 1000%;
+  height: 100%;
+}
+
+.carousel-self ul:nth-of-type(1) li {
+  width: 10%;
+  height: 100%;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  position: relative
+}
+/*
+.carousel-self  ul:nth-of-type(1) li img {
+  height: 80%;
+  display: block;
+}*/
+
+
+/*banner轮播图*/
+
+.carousel-self ul:nth-of-type(2) {
+  min-width: 1rem;
+  height: .3rem;;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel-self ul:nth-of-type(2) li {
+  display: inline-block;
+  width: .14rem;
+  height: .14rem;
+  border-radius: 50%;
+  background-color: #848382
+}
+
+.carousel-self ul:nth-of-type(2) li.active {
+  background-color: #fff;
+}
+
+.large-page{
+    width:100%;
+    height:7.45rem;
+    background-color: #fff;
+}
+
+.modal-like{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 999;
+    
+}
+
+
+/*--------button激活的样式----------*/
+button.active{
+        color: #fff;
+        background-color: #e5372e
+     }
+
+
+input::input-placeholder,textarea::input-placeholder {
+    color:#cdcdcd;
+    font-weight: normal
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color:#cdcdcd;
+    font-weight: normal
+
+}
+
+/*---------------*/
+.nav-float{
+  position: fixed;
+  right: 0;
+  top: 2px;
+  width:1.2rem;
+  height: .4rem;
+  background-color: #e5372e;
+  border-top-left-radius: .2rem;
+  border-bottom-left-radius: .2rem;
+  /*display: flex;
+  align-items: center;
+  justify-content: center*/
+}
+.nav-float>a{
+  height: .4rem;
+  line-height: .4rem;
+  width: 90%;
+  display: inline-block;
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .2rem;
+  text-align: right;
+  color:#fff;
+  letter-spacing: 2px;
+  font-size: .3rem
+}
+
+
+.amimated{
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible!important;
+    backface-visibility: visible!important;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+.amimated-out{
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible!important;
+    backface-visibility: visible!important;
+    -webkit-animation-name: slideOutRight;
+    animation-name: slideOutRight;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+
+
+
+/*hide*/
+.hide{
+  display: none
+}
+
+/**/
+/*noting*/
+.noting{
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.4rem;
+    text-shadow: 1px 1px 2px #fff;
+    box-shadow: 0 0 10px #bbb inset; 
+    -webkit-box-shadow:0 0 10px #bbb inset;
+}
+
+
+/*提示信息层*/
+.modal-public{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    /*height: 30%;*/
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+}
+.notice{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f9f3c2;
+    overflow: hidden;
+    -webkit-animation:waitFn .6s  linear;
+    animation:waitFn .6s  linear;
+    color: #f78572;
+    font-size: .24rem;
+}
+@-moz-keyframes waitFn{
+    0%{
+        height: 0;
+    }
+    25%{
+        height: 10px;
+    }
+    50%{
+        height: 20px;
+    }
+    75%{
+        height: 30px;
+    }
+    100%{
+        height: 40px;
+    }
+}
+
+@-webkit-keyframes waitFn{
+    0%{
+        height: 0;
+    }
+    25%{
+        height: 10px;
+    }
+    50%{
+        height: 20px;
+    }
+    75%{
+        height: 30px;
+    }
+    100%{
+        height: 40px;
+    }
+}
+
+@keyframes waitFn{
+    0%{
+        height: 0;
+    }
+    25%{
+        height: 10px;
+    }
+    50%{
+        height: 20px;
+    }
+    75%{
+        height: 30px;
+    }
+    100%{
+        height: 40px;
+    }
+}
+
+
+/*加载更多*/
+        .loading-more{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 0.8rem;
+            font-size: .26rem;
+            background-color: #fff;
+            color: rgba(0,0,0,0.5)
+        }
+          .loading-more b{
+              display: inline-block;
+              width: .4rem;
+              height: .4rem;
+              border-radius: 50%;
+            animation: mint-spinner-rotate .8s infinite linear;
+            -webkit-animation: mint-spinner-rotate .8s infinite linear;
+            border-top-color: rgba(0,0,0,0.2);
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            border-width: 2px;
+            border-style: solid;
+            margin-right: 5px;
+            
+          }
+    
+    /*totop详情页面的返回按钮和显示向上*/
+
+
+          .to-top,.back-home{
+             width:1.2rem;
+             height: 1.2rem;
+             text-align: center;
+             
+             position: fixed;
+            
+             background-color: rgba(0, 0, 0, 0);
+             bottom: 1.5rem;
+             right: 0;
+             z-index: 999;
+             padding:.2rem
+         }
+         .back-home{
+            bottom: 2.6rem;
+         }
+          .to-top>div,.back-home>div{
+             width:.7rem;
+             height: .7rem;
+             border-radius: 50%;
+             border:1px solid rgba(0, 0, 0, .1);
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             
+             background-color: #fff;
+             box-shadow: 1px 1px 5px #bbb;
+          }
+         .to-top span{
+             display: inline-block;
+             width: 45%;
+             height: 60%;
+             border-top: 1px solid rgba(0, 0, 0, .7);
+             line-height: .5rem
+         }
+         .back-home>div{
+             background-color: #fff
+         }
+         .back-home a{
+             display: inline-block;
+             width: .4rem;
+             height: .4rem;
+             background: url('../static/comeBack.png') no-repeat;
+             background-size: contain
+         }
+
+/**/
+
+.search-input{
+    position: fixed;
+    top:0;
+    height: .8rem;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+.search-input>li:last-child{
+    width: 20%;
+    display: flex;
+    align-items: center
+}
+.search-input>li:last-child>img{
+    height: .3rem;
+    margin-left: .3rem
+}
+.search-input>li:first-child{
+    width:80%;
+    height: 100%;
+    padding-top: .1rem;
+    text-align: right;
+    
+}
+.search-input>li:first-child>input{
+    height: .6rem;
+    width: 80%;
+    border-radius: .3rem;
+    padding-left: .1rem;
+    color:#999;
+    text-align: left;
+    background-color: rgba(255, 2555, 255, 0.6)
+}
+input::input-placeholder,textarea::input-placeholder {
+    color:#bbb;
+    font-weight: 200;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color:#bbb;
+    font-weight: 200
+}
+
+/*－－－－－－－修改轮播图显示文字效果－－－－－－－－－－－－  */
+/* .clearfix p ,.news-list>ul>li>ul>li:last-child>.gotopage-A{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.news-list>ul>li>ul>li:last-child>.gotopage-A{
+        -webkit-line-clamp: 2;
+
+} */
+
+
+/*－－－－－－－－－奖励成动画－－－－－－－  */
+        .amimated-in,.amimated-zoomIn,.amimated-zoomOut{
+              -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-backface-visibility: visible!important;
+            backface-visibility: visible!important;
+        }
+        .amimated-zoomIn{
+
+            -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+        }
+
+         @keyframes zoomIn {
+                from {
+                    opacity: 0;
+                    transform: scale3d(.3, .3, .3);
+                }
+
+                50% {
+                    opacity: 1;
+                }
+            }
+
+                    .amimated-zoomOut{
+            animation-name: zoomOut;
+            -webkit-animation-name: zoomOut;
+        }
+
+        @keyframes zoomOut {
+            from {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+                transform: scale3d(.3, .3, .3);
+            }
+
+            to {
+                opacity: 0;
+            }
+            }
+
+/* －－－－－－－－－－－－－－－－－－ */
+.Noting{
+    line-height: 1rem;
+    text-align: center;
+    color: #999;
+    text-shadow: 1px 1px 1px #fff;
+}
+

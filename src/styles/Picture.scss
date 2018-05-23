@@ -1,0 +1,97 @@
+.shareAdapter.no{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+        z-index: 999;
+
+}
+.shareAdapter{
+    position: fixed;
+    bottom: 0;
+    height: 130px;
+    width:100%;
+    text-align: center;
+    z-index: 20;
+    border:1px solid #e0e0e0;
+    -webkit-transform: translateY(100%);
+    transform:translateY(100%);
+    transition:.8s;
+    will-change: transform;
+    overflow: hidden;
+    background:#fff;
+}
+.shareAdapter .sharelist{
+    padding:20px 0 10px 0;
+}
+.share .sharelist{
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1.375rem
+}
+// .share.shareAdapter .sharelist span{
+//     // height: 50px;
+// }
+.share .sharelist span,.share-page  .sharelist span{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-image: url('../static/shareicons2.png');
+    background-repeat: no-repeat;
+    background-size: 400px 50px;
+    -webkit-background-size:400px 50px;
+}
+.share-wx-f{
+    background-position: 0 0;
+}
+.share-wx-t{
+        background-position: -50px 0;
+
+}
+
+.share-qq {
+     background-position: -100px 0; 
+}
+
+.share-qzone {
+    background-position: -148px 0;
+}
+.share-wb {
+    background-position: -198px 0;
+    overflow:hidden;
+}
+.return-left{
+    color: #bbb;
+    font-size: .4rem;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.modal-share-btn {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 99;
+    text-align: center;
+}
+.share-weixin,.share-llq{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+}
+.share-weixin{
+       
+        background: rgba(0,0,0,.8) 50% 5% no-repeat;
+        background-size: 80%;
+        background-image: url('../static/weinxin_share_dialog.png');
+}
+
+.share-llq{
+        background: rgba(0,0,0,.8) 50% 80% no-repeat;
+        background-size: 80%;
+        background-image: url('../static/shareLlq.png');
+}

@@ -1,0 +1,72 @@
+
+.contain{
+    background-color: #fff;
+    font-weight: 200
+}
+
+
+/*---------------------------------*/
+
+input::input-placeholder,textarea::input-placeholder {
+    color:#bbb;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color:#bbb;
+}
+
+/*-------------------------*/
+.btn-list>ul,.btn-list>div{
+    width: 100%;
+}
+
+.btn-list>ul{
+    display: flex;
+
+}
+.btn-list>ul>li{
+    width: 25%;
+    height: .9rem;
+    line-height: .9rem;
+    font-size: .3rem;
+    color: #999;
+    text-align: right
+}
+.btn-list>ul>li:first-child{
+    width: 50%;
+    text-align: left;
+
+}
+.btn-list>ul>li.active{
+ color: #333;
+}
+.header{
+    height: 2rem;
+    background: -webkit-linear-gradient(45deg,#e60b36 10%, #cf0dc8 90% );
+     background: linear-gradient(45deg, #e60b36 10%, #cf0dc8 90%);
+     padding: 0 .2rem;
+     display: flex;
+     align-items: center;
+     color: #fff
+}
+.header>img{
+    height: 1rem;
+    line-height: 1rem;
+    border-radius: 50%;
+    margin-right: .2rem
+}
+.header>ul{
+    width:50%;
+}
+.header>ul>li:first-child{
+    font-size: .36rem
+}
+.header>strong{
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+    width: 1.2rem;
+    height: .5rem;
+    line-height: .5rem;
+    border:1px solid #fff;
+    text-align: center
+}

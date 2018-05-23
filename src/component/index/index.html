@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>鄱阳资讯</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telphone=no, email=no" />		
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="320">
+	<meta name="browsermode" content="application">
+	<meta name="x5-page-mode" content="app">
+	<meta name="msapplication-tap-highlight" content="no">
+    <meta name="format-detection" content="telephone=no">  
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <style>
+        .loading,.loader {
+            position: fixed;
+            text-align: center;
+            z-index: 9999
+        }
+         .loading{
+             top:0;
+             bottom: 0;
+             left: 0;
+             right: 0;
+               animation: bgColr  1.5s linear;
+            -webkit-animation: bgColr 1.5s  linear;
+            background-color: #fff;
+
+         }
+       .loader {
+            padding-top: 20px;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, .7);
+            color: #fff;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        
+        .loader>div, .loading>div{
+            
+            border-top-color: #0ea84a;
+            border-left-color: #0080cb;
+            border-bottom-color: #e5372e;
+            border-right-color: #fbc423;
+            
+        }
+         .loader>div{
+            border-radius: 50%;
+            border-width: 4px;
+            border-style: solid;
+            animation: mint-spinner-rotate .8s infinite linear;
+            -webkit-animation: mint-spinner-rotate .8s infinite linear;
+            height: 32px;
+            width: 32px;
+         }
+         .loading>div{
+              height: 40px;
+            width: 40px;
+            background:url('../static/logo.png') no-repeat;
+            background-size: cover;
+            margin-top: 50%;
+            margin-left: 45%;
+        
+         }
+         @keyframes bgColr {
+            0% {
+                filter: blur(5px)
+            }
+            to {
+                filter: blur(1px)
+            }
+        }
+        
+        @-webkit-keyframes bgColr {
+             0% {
+                filter: blur(5px)
+            }
+            to {
+                filter: blur(1px)
+            }
+        }
+        
+        
+        @-webkit-keyframes mint-spinner-rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(1turn);
+            }
+        }
+        
+        @keyframes mint-spinner-rotate {
+            0% {
+                transform: rotate(0deg)
+            }
+            to {
+                transform: rotate(1turn)
+            }
+        }
+     
+    </style>
+    <!-- <script src="../../utils/jquery.js"></script> -->
+
+</head>
+<body>
+     <div class="loader hide" id="load">
+        <div></div>
+    </div>
+    <div class="loading" id="loading">
+        <div></div>
+    </div>
+
+    <!--<div class="dropload-up" id='scrollArea'>
+            <div class="dropload-update">
+                <span>↓</span>
+            </div>
+            <div class="dropload-load">
+                <div class="load-div">
+                    <span class="loading-up"></span>
+                </div>
+                
+            </div>
+    </div>-->
+    <!---->
+    <!-- <div class="search-modal modal" id="searcModal">
+        
+        
+    </div> -->
+     <!--消息层-->
+    <div class="modal-public notice-public hide" id="notice">
+        <div class="notice " id="notice-text"></div>
+    </div>
+    <!---->
+
+    <div class="to-top hide" id="toTop">
+        <div>
+            <span>
+                &uarr;
+            </span>
+        </div>
+      
+    </div>
+
+    <!---------------------------------------->
+    <!--<ul class="search-input " >
+            
+            <li>
+                <input type="search" name="" value="" placeholder="搜索" id="searchInput">
+            </li>
+            <li id="searchBtn">
+                <img src="../../static/search.png" alt="">
+            </li>
+    </ul>-->
+     
+    <ul class="header">
+        <li></li>
+        <li>
+            <a href="searchPage.html?v=1">
+                 <img src="../../static/search.png" alt="">
+                <span>| </span>
+                搜索您感兴趣的内容
+            </a>
+        </li>
+    </ul>
+	<div class="contain" id='contain'>
+  
+        <!-- 导航栏 -->
+         <div class="news-nav" id="wrapper" >
+               <ul id="titleList">
+                   <!-- <li class="active">精选</li>
+                   <li>新闻</li>
+                   <li>北京</li>
+                   <li>财经</li>
+                   <li>历史</li>
+                   <li>娱乐</li>
+                   <li>段子</li>
+                   <li>dd</li>
+                   <li>精选</li>
+                   <li>精选</li> -->
+               </ul>
+        </div>
+        <!--－－－－－－－加载的内容－－－－－－－－－－-->
+        <div class="news-list">
+
+            <ul id="bodyList">
+                <!--普通图片在右侧的列表  -->
+                <!-- <li class="common-list">
+                        <ul>
+                            <li>
+                                <a><img src="../../static/news-test.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a>
+                                    被催眠的催眠师》今日上线  朱颜曼滋挑战新自我
+                                </a>
+                                <div>
+                                    <span class="first-span">04-02 21:33 </span>
+                                    <span class="last-span">评论:3668</span>
+                                </div>
+                            </li>
+                        </ul>
+                </li> -->
+                <!--只有文字的列表  -->
+                <!-- <li class="character-list">
+                        <ul>
+                            <li>
+                                <a>被催眠的催眠师》今日上线  朱颜曼滋挑战新自我</a>
+                            </li>
+                            <li>
+                                <span class="top-span">置顶</span>
+                                <span class="first-span">04-02 21:33 </span>
+                                <span class="last-span">评论:3668</span>
+                               
+                            </li>
+                        </ul>
+                </li> -->
+                <!--三个图片的列表  -->
+                <!-- <li class="picture-list">
+                        <ul>
+                            <li>
+                                <a>被催眠的催眠师》今日上线  朱颜曼滋挑战新自我</a>
+                            </li>
+                            <li class="picture">
+                                <a>
+                                <img src="../../static/news-test.png" alt="">
+                                <img src="../../static/news-test.png" alt="">
+                                <img src="../../static/news-test.png" alt="">
+                                </a>
+                            </li>
+                            <li>  
+                                <span class="first-span">04-02 21:33</span>
+                                <span class="last-span">评论:3668</span>  
+                            </li>
+                        </ul>
+                </li> -->
+                <!--广告  -->
+                <!-- <li class='lad-small'>
+                        <ul>
+                            <li>
+                               <a> <img src="../../static/news-test.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a>
+                                    被催眠的催眠师》今日上线  朱颜曼滋挑战新自我
+                                </a>
+                                <div>
+                                    <span class="first-span">广告</span>
+                                </div>
+                            </li>
+                        </ul>
+       
+                </li> -->
+                <!-- <li class='lad-big'>
+                    <a class="first-a">被催眠的催眠师》今日上线  朱颜曼滋挑战新自我</a>
+                    <a><img src="../../static/news-test.png" alt=""></a>
+
+                    <ul>
+                        <li>广告<span>|</span>新鲜</li>
+                        <li><b>&times</b></li>
+                    </ul> 
+                       
+                </li> -->
+           
+            </ul>
+
+
+            <span class="loading-more " id="loadingMore" >
+                <b>
+                
+                 </b> 加载中...
+            </span>
+        </div>
+
+    </div>
+
+
+    <!--－－－－－－－－－－－－－－－－－－－-->
+    <div class="footer-nav">
+       
+        <ul>
+            <li>
+                <a href="index.html?v=1" >
+                     <img src="../../static/index-s.png" alt=""> 
+                </a>
+                
+            </li>
+            <li class="active">首页</li>
+        </ul>
+        <ul>
+            <li>
+                 <a href="found.html?v=1" >
+                     <img src="../../static/recommend.png" alt=""> 
+                 </a>
+            </li>
+            <li>推荐</li>
+        </ul>
+        <ul>
+            
+            <li>
+                <a href="found.html?v=1">
+                     <img src="../../static/found.png" alt=""> 
+                </a>
+            </li>
+            <li>发现</li>
+        </ul>
+        <ul>
+            <li>
+                <a href="myself.html?v=1">
+                 <img src="../../static/myself.png" alt=""> 
+                </a>
+            </li>
+            <li>我的</li>
+        </ul>
+    </div>
+
+		
+</body>
+
+</html>
+
+

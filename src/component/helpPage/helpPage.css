@@ -1,0 +1,60 @@
+body{
+    background-color: #f2f2f2;
+    height: 100%;
+}
+.title{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .28rem;
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    padding:0 .2rem
+}
+
+ul>li b{
+    float: right;
+    width: .25rem;
+    height: .25rem;
+    margin-top: .4rem;
+    margin-right: .2rem;
+    background: url('../../static/downSymbol.png') no-repeat;
+    background-size: contain
+}
+ul>.active b{
+    background: url('../../static/upSymbol.png') no-repeat;
+    background-size: contain
+}
+ul>li>p{
+    padding:.35rem .2rem;
+    line-height: .4rem;
+    color: #666;
+    text-align: left;
+    border-bottom: 1px solid #f2f2f2
+}
+ul>li{
+    /* height: 1rem; */
+    overflow: hidden;
+}
+ul>.active{
+    height: auto
+}
+@keyframes help-rotate {
+            0% {
+                transform: rotate(0deg)
+            }
+            to {
+                transform: rotate(180deg)
+            }
+        }
+  @-webkit-keyframes help-rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(180deg);
+            }
+        }
+        

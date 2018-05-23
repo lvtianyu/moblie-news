@@ -1,0 +1,170 @@
+
+.contain{
+    font-size: .3rem;
+    background-color: #fff;
+    text-align: left;
+}
+
+/*-------------------------*/
+.header{
+    height: .66rem;
+    width: 60%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    border-radius: .33rem;
+    border:1px solid #cdcdcd;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: .2rem;
+    background-color: #fff;
+    z-index: 999
+}
+.header>li{
+    width: 50%;
+    height: inherit;
+    border-radius: .33rem;
+    line-height: .66rem;
+    float: left
+}
+.header>li.active{
+    color: #fff;
+    background-color: #f94d4d
+}
+
+/*--------------------------*/
+.body-list,.body-list>div>ul,.body-list>div>ul>li,body-list>div>div>li>ul,body-list>div>div>li>ul>li,.body-list>div{
+    width: 100%;
+
+}
+.body-list{
+    padding:.7rem .2rem 0 .2rem;
+     
+}
+.body-list>div>ul{
+    padding:.5rem 0 .2rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.body-list>div>ul>li>ul>li:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .2rem
+}
+.body-list>div>ul>li>ul>li:first-child>div:first-child{
+    width: 80%;
+    
+}
+.body-list>div>ul>li>ul>li:first-child>div>strong,.body-list>div>ul>li>ul>li i,.body-list>div>ul>li>ul>li:last-child>span{
+    display: inline-block
+}
+.body-list>div>ul>li>ul>li:first-child>div img{
+    vertical-align: middle;
+    width: .6rem;
+    height: .6rem;
+    border-radius: 50%
+
+}
+.body-list>div>ul>li>ul>li:first-child>div>strong{
+    color: #fa6363;
+    font-weight: 200;
+    margin-left: .1rem
+}
+
+.body-list>div>ul>li>ul>li span>i ,.body-list>div>ul>li>ul>li div>i{
+    width: .3rem;
+    height: .31rem;
+    vertical-align: middle
+}
+.body-list>div>ul>li>ul>li div>i{
+    
+    background:url("../../static/good.png") no-repeat;
+    background-size: contain
+}
+.body-list>div>ul>li>ul>li div>i.active{
+    background:url("../../static/good-s.png") no-repeat;
+    background-size: contain
+}
+.content{
+    overflow: hidden;
+    margin-bottom: .1rem;
+    font-weight: normal
+}
+.body-list>div>ul>li>ul>li:last-child>span{
+    width: 50%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+   
+}
+.body-list>div>ul>li>ul>li span>i{
+   
+    background:url("../../static/address.png") no-repeat;
+    background-size: contain
+}
+.body-list>div>ul>li>ul>li:last-child>span:last-child{
+    text-align: right
+}
+.body-list>div>ul>li>ul>li:last-child>span,.body-list>div>ul>li:last-child{
+     font-size: .24rem;
+     color: #999
+}
+
+.body-list>div>ul>li:last-child{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    background-color: #f1f1f1;
+    height: .5rem;
+    line-height: .5rem;
+    padding:0 3px ;
+}
+.body-list>div>.replyme-list>li:last-child{
+    background-color: #fff
+
+}
+
+.span-li{
+    display: flex;
+    justify-content: center;
+    height: .5rem;
+    align-items: center
+}
+.span-li>span:first-child{
+    float: left
+}
+.span-li>span:last-child{
+    float: right
+}
+
+.body-list>div>.replyme-list>.reply-content{
+    background-color: #f1f1f1;
+    padding: 0 .2rem .2rem;
+    border-top: 1px solid transparent
+}
+
+.body-list>div>.replyme-list>.reply-content>ul,
+.body-list>div>.replyme-list>.reply-content>ul>li{
+    width: 100%;
+}
+.body-list>div>.replyme-list>.reply-content>ul>li.name{
+    color: #f94d4d;
+    margin:.2rem 0
+}
+.body-list>div>.replyme-list>.reply-content>a{
+    font-size: .24rem;
+    color: #999
+}
+p{
+     width: 100%;
+    height: 100%;
+}
+p>a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    width: 100%;
+    height: 100%;
+    color: #999
+}

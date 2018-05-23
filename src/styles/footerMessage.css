@@ -1,0 +1,83 @@
+
+/*---------------------*/
+.footer-message{
+    height: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding:0 .2rem;
+    background-color: #fff;
+    color: #bbb
+}
+.footer-message>ul{
+    height: 100%;
+    width: 100%;
+    /*display: flex;
+    align-items: center;
+    justify-content: space-around*/
+}
+.footer-message>ul>li{
+    float: left
+}
+.footer-message>ul>.li1{
+    width:6%;
+    height: .4rem;
+    background:url("../static/edit.png") no-repeat;
+    background-size: contain;
+    margin-top: .3rem
+}
+.footer-message>ul>.li2{
+    width:70%;
+    height: 100%;
+}
+.footer-message>ul>.li3{
+    margin-top: .2rem;
+    width: 19%;
+    position: relative
+}
+.footer-message>ul>.li3>b{
+    display: inline-block;
+    width:80%;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .24rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #bbb;
+    color: #fff;
+    text-align: center
+
+}
+.footer-message>ul>.li3>b.active{
+        background-color: #f94d4d;
+
+}
+.footer-message>ul>.li3>span{
+            position: absolute;
+            right: 0;
+            top:-8px;
+
+
+}
+.footer-message>ul>li>input{
+    height: inherit;
+    width: 100%;
+}
+.footer-message>ul>li>span{
+    display: inline-block;
+    line-height: .4rem;
+    font-size: .24rem;
+    color: #f94d4d;
+
+}
+
+.footer-message>ul>.li4{
+    width:5%;
+    height: inherit;
+    text-align: right;
+    line-height: .9rem
+}
+.footer-message>ul>li>a{
+    color: #bbb
+}

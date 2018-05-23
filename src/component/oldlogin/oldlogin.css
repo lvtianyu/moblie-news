@@ -1,0 +1,167 @@
+.contain{
+    background-color: #fff;
+    color: #bbb;
+    /* height: 100%; */
+    position: absolute
+}
+
+.header,.btn,.public{
+    width: 100%
+}
+
+.header{
+    height: 3.8rem;
+
+}
+.header>li{
+    display: inline-block;
+}
+.header>li:first-child{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: .8rem;
+    background: url("../../static/logo.png") no-repeat;
+    background-size: cover
+}
+.header>li:last-child{
+    width: 100%;
+    font-size: .24rem;
+    margin-top: .3rem;
+}
+
+
+/*----------------*/
+.btn{
+    display: flex;/* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+    display: -webkit-flex;
+    display: -moz-flex;/* Firefox 18+ */
+    display: -moz-box; /* Firefox 17- */
+    justify-content: space-around;
+    height: 1rem;
+    font-size: .36rem;
+    padding: 0 .75rem;
+
+}
+.btn>span{
+    display: block;
+    height: inherit;
+    border-bottom: 1px solid transparent;
+    float: left;
+}
+.btn>span:last-child{
+    float: right;
+}
+.btn>span.active{
+    border-bottom: 1px solid #e5372e;
+}
+
+
+.public{
+    margin-top: .6rem;
+    padding: 0 .75rem;
+}
+
+.public>div,.public>p,button{
+    width:100%;
+    height: .9rem;
+    border-radius: .45rem
+}
+.public>div{
+    border:1px solid #f2f2f2;;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -moz-box; /* Firefox 17- */
+
+    align-items: center;
+    overflow: hidden;
+    padding-left: .3rem
+}
+.logIn>div{
+    margin-bottom: .4rem;
+
+}
+.logIn{
+    display: none
+}
+.public>div>img{
+    width:.25rem;
+    height: .35rem;
+    vertical-align: middle;
+    margin-right: .2rem
+}
+.public>div>input{
+    height: 100%;
+    width: 60%;
+    font-size: .3rem
+}
+.public>div>s{
+    display: inline-block;
+    height: .7rem;
+    line-height: .7rem;
+    width: 35%;
+    background-color: #e3e3e3;
+    border-radius: .35rem;
+    letter-spacing: 1px;
+    margin-right: .1rem;
+    text-decoration: none;
+    font-size: .3rem;
+    color: #fff
+}
+.public>div>s.active{
+    background-color: #e5372e;
+}
+.public>div>s.succeed{
+    background-color: green;
+}
+.public>.verification-code{
+    justify-content: space-between
+}
+.public>p{
+    line-height: .1rem;
+    color: #e5372e;
+    font-size: .24rem
+}
+button{
+    color: #fff;
+    font-size: .36rem;
+    letter-spacing: 2px
+}
+.register>div:nth-of-type(1),.register>div:nth-of-type(2){
+    margin-bottom: .4rem
+}
+.register>div:nth-of-type(3)>input{
+    
+    width: 80%
+}
+.public>.seting-password>b{
+    display: inline-block;
+    width:.6rem;
+    height: .4rem;
+    margin-right: 5%;
+    background-color: #e5372e;
+    background:url('../../static/closeeye.png') no-repeat;
+    background-size: cover
+}
+.public>.seting-password>.active{
+    background:url('../../static/openeye.png') no-repeat;
+    background-size: cover
+}
+
+.register>ul{
+    width: 100%;
+    height: .9rem;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -moz-box; /* Firefox 17- */
+
+    align-items: center;
+    
+}
+.register>ul>li{
+    display: inline-block;
+    margin-left: .1rem;
+    font-size: .24rem;
+    line-height: .24rem
+}
